@@ -1,0 +1,59 @@
+.wholepart{
+    padding-top: 140px;
+}
+
+.container {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+
+
+}
+
+
+.downloadNow {
+    margin: 0 100px;
+}
+
+.text {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.products {
+    margin-top: 15px;
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.photos {
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1{
+    border: 1px solid black;
+}
+
+.signup{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
