@@ -6,18 +6,25 @@ import HomeReplace from './HomeReplace';
 import Meesho from './Meesho';
 import Footer from './Footer';
 import ProductDetails from './ProductDetails';
+import Cart from './Cart';
 
 export const MyAppContext = React.createContext();
 
 function App() {
   const [inputValue, setInputValue] = useState("");
   const [login, setLogin] = useState(false);
+  const [cartItem, setCartItem] = useState([]);
+  const [count, setCount] = useState(0);
 
   const contextValue = {
     inputValue,
     setInputValue,
     login,
-    setLogin
+    setLogin,
+    cartItem,
+    setCartItem,
+    count, 
+    setCount
   };
 
   return (
@@ -29,6 +36,8 @@ function App() {
           <Route path="/meesho" element={<Meesho />} />
           <Route path="/homeReplace/:category" element={<HomeReplace />} />
           <Route path="/products/:id" element={<ProductDetails/>}/>
+          <Route path="/cart" element={<Cart/>}/>
+
         </Routes>
         <Footer />
       </BrowserRouter>

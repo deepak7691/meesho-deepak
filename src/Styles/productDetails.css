@@ -1,90 +1,154 @@
 /* productDetails.css */
 
 .product-details {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top:  200px;
-}
-
-.additional-photos {
-    flex: 0 0 20%;
+    padding-top: 180px;
+    width: 80%;
+    margin: 0px 250px;
+   
+  }
+  
+  .additional-photos {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-
-.additional-image {
-    width: 80px;
-    height: auto;
+    width: 10%;
+  }
+  
+  .additional-image {
+    width: 80%;
+    height: 70px;
     margin-bottom: 10px;
-}
-
-.main-image {
-    flex: 0 0 40%;
-    width: 300px;
-    height: 250px;
-    margin: 0 20px;
-    position: relative;
-}
-
-.main-image img {
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    width: 40%;
+    
+  }
+  
+  .mainpic{
     width: 100%;
     height: 400px;
-    overflow: hidden;
-}
-
-.buttons {
-    
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+  }
+ 
+  
+  .buttons {
     display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    color: rgb(239, 36, 188);
     gap: 10px;
-}
-
-.product-info {
-    flex: 0 0 40%;
-    max-width: 40%;
-}
-
-.product-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.size-selection {
-    margin-bottom: 10px;
-}
-
-.size-radio {
+  }
+  
+  .buttons button {
     margin-right: 10px;
-}
-
-.product-details-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.product-details-list li {
-    margin-bottom: 5px;
-}
-
-.product-not-found {
-    text-align: center;
+  }
+  
+  .product-info {
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    width:30% ;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productDisName{
+    /* border: 1px solid black;
+    padding: 5px 10px; */
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    border: 1px solid rgb(234, 234, 242);
+  }
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
     font-weight: bold;
-    color: red;
-}
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .size-selection {
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    border: 1px solid rgb(234, 234, 242);
+  }
+  
+  .size-selection p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+  }
+  
+  .radio-group label {
+    margin-right: 10px;
+  }
+  
+  .product-details-list {
+    /* border: 1px solid black; */
+    padding: 5px 10px;
+    color: rgb(97, 97, 115);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mier book";
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 20px 16px;
+    border: 1px solid rgb(234, 234, 242);
+  }
+  
+  .product-details-list li {
+    margin-bottom: 5px;
+  }
+  
 
-.main-image{
-    overflow: hidden;
-}
+  .headings{
+    color: black;
+    margin-bottom: 5px;
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .loadingMeesho {
+    border-radius: 20px;
+    width: 100px;
+    height: 80px;
+  }

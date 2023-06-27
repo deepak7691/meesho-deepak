@@ -422,11 +422,11 @@ export const ProductData = [
         "stock": 133,
         "brand": "Gucci",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/ktyp8cw0/t-shirt/3/i/u/l-14847364-mast-harbour-original-imag76r5yzsz7zrv.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/245807135/mavc0_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/21/1.png",
-            "https://i.dummyjson.com/data/products/21/2.jpg",
-            "https://i.dummyjson.com/data/products/21/3.jpg"
+            "https://images.meesho.com/images/products/245807135/mavc0_512.webp",
+            "https://images.meesho.com/images/products/245807135/s6iah_512.webp",
+            "https://images.meesho.com/images/products/245807135/aa4dh_512.webp"
         ]
     },
     {
@@ -441,11 +441,12 @@ export const ProductData = [
         "stock": 146,
         "brand": "Zara",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/ku2zjww0/t-shirt/n/0/e/s-15058784-mast-harbour-original-imag7ayuvnf52wyw.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/75970557/6kmep_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/22/1.jpg",
-            "https://i.dummyjson.com/data/products/22/2.jpg",
-            "https://i.dummyjson.com/data/products/22/3.jpg"
+            "https://images.meesho.com/images/products/75970557/6kmep_512.webp",
+            "https://images.meesho.com/images/products/75970557/unj9d_512.webp",
+            "https://images.meesho.com/images/products/75970557/b9soe_512.webp"
+            
         ]
     },
     {
@@ -460,13 +461,11 @@ export const ProductData = [
         "stock": 26,
         "brand": "Puma",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/kvtuxe80/t-shirt/g/c/1/m-14847638-mast-harbour-original-imag8n2s6xagdcjz.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/191304361/dlecy_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/23/1.jpg",
-            "https://i.dummyjson.com/data/products/23/2.jpg",
-            "https://i.dummyjson.com/data/products/23/3.jpg",
-            "https://i.dummyjson.com/data/products/23/4.jpg",
-            "https://i.dummyjson.com/data/products/23/thumbnail.jpg"
+            "https://images.meesho.com/images/products/191304361/dlecy_512.webp",
+            "https://images.meesho.com/images/products/191304361/orvhh_512.webp",
+         
         ]
     },
     {
@@ -481,13 +480,13 @@ export const ProductData = [
         "stock": 113,
         "brand": "Adidas",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/kvzkosw0/t-shirt/c/r/h/xl-15273180-mast-harbour-original-imag8rhew6hbrgsr.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/182599633/flict_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/24/1.jpg",
-            "https://i.dummyjson.com/data/products/24/2.jpg",
-            "https://i.dummyjson.com/data/products/24/3.jpg",
-            "https://i.dummyjson.com/data/products/24/4.jpg",
-            "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
+            "https://images.meesho.com/images/products/182599633/flict_512.webp",
+            "https://images.meesho.com/images/products/182599633/kxbop_512.webp",
+            "https://images.meesho.com/images/products/182599633/ycvkm_512.webp",
+            "https://images.meesho.com/images/products/182599633/ooljg_512.webp",
+            
         ]
     },
     {
@@ -502,13 +501,13 @@ export const ProductData = [
         "stock": 47,
         "brand": "Gucci",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/kfoapow0-0/t-shirt/1/9/i/l-2314400-hrx-by-hrithik-roshan-original-imafw2k7ewbdgwhb.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/274779186/fliaq_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/25/1.png",
-            "https://i.dummyjson.com/data/products/25/2.jpg",
-            "https://i.dummyjson.com/data/products/25/3.png",
-            "https://i.dummyjson.com/data/products/25/4.jpg",
-            "https://i.dummyjson.com/data/products/25/thumbnail.jpg"
+            "https://images.meesho.com/images/products/274779186/fliaq_512.webp",
+            "https://images.meesho.com/images/products/274779186/wztcq_512.webp",
+            "https://images.meesho.com/images/products/274779186/9pmko_512.webp",
+            "https://images.meesho.com/images/products/274779186/eawzq_512.webp",
+            
         ]
     },
     {
@@ -523,14 +522,12 @@ export const ProductData = [
         "stock": 131,
         "brand": "hrx",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/khglj0w0/t-shirt/4/y/3/l-ez-tshirtss-skull-center-maroon-ezdeals-original-imafxh3qfp3vqgmv.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/198961826/uc6fq_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/26/1.jpg",
-            "https://i.dummyjson.com/data/products/26/2.jpg",
-            "https://i.dummyjson.com/data/products/26/3.jpg",
-            "https://i.dummyjson.com/data/products/26/4.jpg",
-            "https://i.dummyjson.com/data/products/26/5.jpg",
-            "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
+            "https://images.meesho.com/images/products/198961826/uc6fq_512.webp",
+            "https://images.meesho.com/images/products/198961826/lmvd5_512.webp",
+            "https://images.meesho.com/images/products/198961826/eubk4_512.webp",
+           
         ]
     },
     {
@@ -545,13 +542,13 @@ export const ProductData = [
         "stock": 17,
         "brand": "mast",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/kflftzk0-0/t-shirt/a/w/p/m-10106267-hrx-by-hrithik-roshan-original-imafwyf82mjvzset.jpeg?q=70",
+        "thumbnail": "	https://images.meesho.com/images/products/295838757/vivem_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/27/1.jpg",
-            "https://i.dummyjson.com/data/products/27/2.jpg",
-            "https://i.dummyjson.com/data/products/27/3.jpg",
-            "https://i.dummyjson.com/data/products/27/4.jpg",
-            "https://i.dummyjson.com/data/products/27/thumbnail.webp"
+            "https://images.meesho.com/images/products/295838757/vivem_512.webp",
+            "https://images.meesho.com/images/products/295838757/bbnwq_512.webp",
+            "https://images.meesho.com/images/products/295838757/axdie_512.webp",
+            "https://images.meesho.com/images/products/295838757/n2h4c_512.webp",
+            
         ]
     },
     {
@@ -566,13 +563,13 @@ export const ProductData = [
         "stock": 54,
         "brand": "mast ",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/jvfk58w0/t-shirt/x/g/d/l-hrxss18mk-1001-a-hrx-by-hrithik-roshan-original-imafgc26zjagpcdq.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/218722472/r0kjk_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/28/1.jpg",
-            "https://i.dummyjson.com/data/products/28/2.jpg",
-            "https://i.dummyjson.com/data/products/28/3.png",
-            "https://i.dummyjson.com/data/products/28/4.jpg",
-            "https://i.dummyjson.com/data/products/28/thumbnail.jpg"
+            "https://images.meesho.com/images/products/218722472/r0kjk_512.webp",
+            "https://images.meesho.com/images/products/218722472/6kfyy_512.webp",
+            "https://images.meesho.com/images/products/218722472/lpsbr_512.webp",
+        
+            
         ]
     },
     {
@@ -587,13 +584,11 @@ export const ProductData = [
         "stock": 7,
         "brand": "Zara",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/xif0q/shopsy-t-shirt/q/m/l/m-sh-tl-m-hs-03-p1-mrn-triangletees-original-imagznfhcgd5wyaj.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/243651791/t0svw_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/29/1.jpg",
-            "https://i.dummyjson.com/data/products/29/2.jpg",
-            "https://i.dummyjson.com/data/products/29/3.webp",
-            "https://i.dummyjson.com/data/products/29/4.webp",
-            "https://i.dummyjson.com/data/products/29/thumbnail.webp"
+            "https://images.meesho.com/images/products/243651791/t0svw_512.webp",
+            "https://images.meesho.com/images/products/243651791/ejdxi_512.webp",
+          
         ]
     },
     {
@@ -608,12 +603,12 @@ export const ProductData = [
         "stock": 54,
         "brand": "Gucci",
         "category": "men",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/9/1/o/m-db1024-42-3bros-original-imagz8zkvwjtayrs.jpeg?q=70",
+        "thumbnail": "	https://images.meesho.com/images/products/298199231/bmwwy_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/30/1.jpg",
-            "https://i.dummyjson.com/data/products/30/2.jpg",
-            "https://i.dummyjson.com/data/products/30/3.jpg",
-            "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
+            "https://images.meesho.com/images/products/298199231/bmwwy_512.webp",
+            "https://images.meesho.com/images/products/298199231/0wvpw_512.webp",
+            "https://images.meesho.com/images/products/298199231/wkvw6_512.webp",
+            "https://images.meesho.com/images/products/298199231/oud2i_512.webp"
         ]
     },
 

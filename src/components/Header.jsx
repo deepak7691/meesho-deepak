@@ -18,6 +18,10 @@ function Header() {
     navigate('/meesho');
   };
 
+  const goToCart = () =>{
+    navigate('/cart')
+  }
+
   const handleInputChange = (e) => {
     navigate("meesho")
     setInputValue(e.target.value);
@@ -47,7 +51,7 @@ function Header() {
             <li className="download">DownLoad App</li>
             <li className="supplier">Become a Supplier</li>
             <li>Profile</li>
-            <li>Cart</li>
+            <li onClick={goToCart}>Cart</li>
           </ul>
         </div>
       </header>
