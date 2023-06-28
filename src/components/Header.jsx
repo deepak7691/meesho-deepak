@@ -2,7 +2,9 @@ import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import meeshoLogo from '../Images/meeshoLogo.png';
 import SearchIcon from '@mui/icons-material/Search';
-
+import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
+import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
 import '../Styles/header.css';
 import { MyAppContext } from './App';
 
@@ -18,7 +20,7 @@ function Header() {
     navigate('/meesho');
   };
 
-  const goToCart = () =>{
+  const goToCart = () => {
     navigate('/cart')
   }
 
@@ -35,8 +37,8 @@ function Header() {
             <img src={meeshoLogo} onClick={navigateHome} alt="logo" />
           </div>
           <div className="input-box">
-          <SearchIcon fontSize="large" className="search-icon" />
-            <input  
+            <SearchIcon fontSize="large" className="search-icon" />
+            <input
               className="input-search"
               type="text"
               placeholder="Try Saree, Kurti or Search by Product Code"
@@ -48,10 +50,16 @@ function Header() {
 
         <div className="right-side">
           <ul className="list">
-            <li className="download">DownLoad App</li>
+            <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' /> DownLoad App</li>
             <li className="supplier">Become a Supplier</li>
-            <li>Profile</li>
-            <li onClick={goToCart}>Cart</li>
+            <div className="profilepart">
+              <div className='profileicon'><Person2OutlinedIcon fontSize='medium' className='icons'/></div>
+              <div className="profile">Profile</div>
+            </div>
+            <div className="cartpart">
+              <div className='cartIcon'><AddShoppingCartOutlinedIcon fontSize='medium' onClick={goToCart} /></div>
+              <div className="cart">Cart</div>
+            </div>
           </ul>
         </div>
       </header>

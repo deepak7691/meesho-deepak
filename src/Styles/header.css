@@ -55,11 +55,13 @@
   .right-side {
     display: flex;
     align-items: center;
+    justify-self: center;
   }
   
   .list {
     display: flex;
-    gap: 70px;
+    gap: 60px;
+    justify-content:space-evenly;
     margin-right: 50px;
   }
   
@@ -68,13 +70,21 @@
   }
   
   .download {
-    border-right: 1px solid black;
-    padding: 0 10px;
+   width: 140px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
   }
   
   .supplier {
-    border-right: 1px solid black;
-    padding: 0 20px;
+    width: 140px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
   }
   
   .header2 {
@@ -94,15 +104,77 @@
   .items li {
     cursor: pointer;
     list-style: none;
-    font-weight: 500;
-    color: rgb(53, 53, 67);
+    font-weight: 400;
+    color: black;
     font-style: normal;
     font-size: 16px;
     font-family: "Mier book";
+    position: relative;
+  
+  }
+
+  .items li:hover{
+    color: rgb(205, 24, 175);
+    font-weight: 500;
   }
   
-  .items li:hover {
-   color: #a40e77;
-   font-weight:600
-  }
   
+  .items li:hover::after {
+    
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position the pseudo-element */
+    left: 0; /* Align the pseudo-element to the left */
+    bottom: -15px; /* Adjust the distance of the line from the name */
+    width: 100%; /* Set the width of the pseudo-element */
+    border-bottom: 3px solid rgb(205, 24, 175);; /* Adjust the border properties as needed */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .profilepart{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 100px;
+    justify-content: center;
+    
+
+  }
+
+  .cartpart{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 100px;
+    justify-content: center;
+    
+  }
+
+ .profileicon, .profile, .cartIcon, .cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ }
+
+
+
+
+
+
+
+
+
