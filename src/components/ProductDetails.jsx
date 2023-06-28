@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ProductData } from './data';
 import { Button } from '@mui/material';
 import { AddShoppingCart, Payment } from '@mui/icons-material';
@@ -8,7 +8,9 @@ import loader from "../Images/loader.gif"
 import { MyAppContext } from './App';
 
 function ProductDetails() {
-  const {cartItem , setCartItem} = useContext(MyAppContext)
+
+  const navigate = useNavigate();
+  const {cartItem , setCartItem, setCount} = useContext(MyAppContext)
   const { id } = useParams();
   const [loaders, setLoaders] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -17,6 +19,7 @@ function ProductDetails() {
    const product = ProductData.find((product) => product.id === parseInt(id));
 
   const handleLoader = () => {
+    setCount((prev) => prev + 1)
     setLoaders(false);
     setCartItem([...cartItem,product])
     setTimeout(() => {
@@ -24,7 +27,9 @@ function ProductDetails() {
     }, 600);
   }
 
-  
+  const  navigatePayment = () =>{
+      navigate("/payment")
+  }
   
 
   const handleAdditionalImageClick = (image) => {
@@ -58,7 +63,7 @@ function ProductDetails() {
               <Button onClick={handleLoader} variant="outlinedst" startIcon={<AddShoppingCart />} style={{ border: '1px solid rgb(159, 32, 137)', color: 'rgb(159, 32, 137)' }}>
                 Add to Cart
               </Button>
-              <Button variant="contained" startIcon={<Payment />} style={{ backgroundColor: 'rgb(159, 32, 137)' }}>
+              <Button onClick={navigatePayment} variant="contained" startIcon={<Payment />} style={{ backgroundColor: 'rgb(159, 32, 137)' }}>
                 Buy Now
               </Button>
             </div>
@@ -100,7 +105,7 @@ function ProductDetails() {
           </div>
         </div>
       ) : (
-        <div className="loader" style={{ backgroundColor: loaders ? 'white' : 'rgb(51 51 51 / 86%)' }}>
+        <div className="loader" style={{ backgroundColor: loaders ? 'white' : 'rgb(51 51 51 / 100%)' }}>
           <img className="loadingMeesho" src={loader} alt="Loading" />
         </div>
       )}

@@ -7,6 +7,11 @@ import Meesho from './Meesho';
 import Footer from './Footer';
 import ProductDetails from './ProductDetails';
 import Cart from './Cart';
+import PaymentPage from './PaymentPage';
+import Loader from './Loader';
+import Login from './Login';
+import Register from './Register';
+
 
 export const MyAppContext = React.createContext();
 
@@ -37,6 +42,14 @@ function App() {
           <Route path="/homeReplace/:category" element={<HomeReplace />} />
           <Route path="/products/:id" element={<ProductDetails/>}/>
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/payment" element={<PaymentPage/>}/>
+          <Route path="/loader" element={<Loader/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+
+
+
+
 
         </Routes>
         <Footer />

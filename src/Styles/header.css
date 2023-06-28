@@ -128,21 +128,6 @@
     width: 100%; /* Set the width of the pseudo-element */
     border-bottom: 3px solid rgb(205, 24, 175);; /* Adjust the border properties as needed */
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   .profilepart{
     display: flex;
@@ -171,7 +156,21 @@
  }
 
 
-
+ .counter{
+  position: absolute;
+  background: rgb(255, 231, 251);
+  border-radius: 50%;
+  right: 62px;
+  top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(159, 32, 137);
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

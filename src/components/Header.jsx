@@ -10,7 +10,7 @@ import { MyAppContext } from './App';
 
 function Header() {
   const navigate = useNavigate();
-  const { inputValue, setInputValue } = useContext(MyAppContext);
+  const { inputValue, setInputValue ,count} = useContext(MyAppContext);
 
   const handleNavigate = (category) => {
     navigate(`/homeReplace/${category}`);
@@ -50,14 +50,14 @@ function Header() {
 
         <div className="right-side">
           <ul className="list">
-            <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' /> DownLoad App</li>
+            <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' />Download App <span>|</span></li>
             <li className="supplier">Become a Supplier</li>
             <div className="profilepart">
               <div className='profileicon'><Person2OutlinedIcon fontSize='medium' className='icons'/></div>
               <div className="profile">Profile</div>
             </div>
             <div className="cartpart">
-              <div className='cartIcon'><AddShoppingCartOutlinedIcon fontSize='medium' onClick={goToCart} /></div>
+              <div className='cartIcon'><AddShoppingCartOutlinedIcon fontSize='medium' onClick={goToCart} /> {count > 0 && <span className='counter'>{count}</span> } </div>
               <div className="cart">Cart</div>
             </div>
           </ul>
