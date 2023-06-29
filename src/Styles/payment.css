@@ -7,7 +7,7 @@
     text-align: center;
     padding-top: 180px;
     margin: 0 auto;
-    width: 500px;
+    width: 400px;
     border: 1px solid lightgray;
     border-radius: 8px;
    }
@@ -23,7 +23,7 @@
     border-radius: 8px;
     font-size: 20px;
     border: 1px solid lightgray;
-    background: rgb(244, 241, 241);
+    background: rgb(243, 243, 243);
    }
 
    .buttonSubmit{

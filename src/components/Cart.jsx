@@ -11,7 +11,7 @@ import '../Styles/cart.css';
 function Cart() {
 
   const navigate = useNavigate();
-  const { setCount, setCartItem,login,setLogin } = useContext(MyAppContext);
+  const { setCount, setCartItem, login } = useContext(MyAppContext);
   const [showLoader, setShowLoader] = useState(false);
 
   const navigateToHome = () => {

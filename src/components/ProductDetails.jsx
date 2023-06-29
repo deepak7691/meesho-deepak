@@ -9,7 +9,7 @@ import { MyAppContext } from './App';
 
 function ProductDetails() {
   const navigate = useNavigate();
-  const { cartItem, setCartItem, setCount } = useContext(MyAppContext);
+  const { cartItem, setCartItem, setCount , login} = useContext(MyAppContext);
   const { id } = useParams();
   const [loaders, setLoaders] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -27,7 +27,11 @@ function ProductDetails() {
   };
 
   const navigatePayment = () => {
+    if(login){
     navigate("/payment");
+    }else{
+      navigate("/login")
+    }
   };
 
   const handleAdditionalImageClick = (image) => {
@@ -51,7 +55,7 @@ function ProductDetails() {
               <img
                 key={index}
                 src={image}
-                alt={`Additional Image ${index}`}
+                alt={`${index}`}
                 className={`additional-image ${selectedImage === image ? 'selected' : 'image'}`}
                 onClick={() => handleAdditionalImageClick(image)}
               />

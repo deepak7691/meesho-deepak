@@ -10,7 +10,7 @@ import { MyAppContext } from './App';
 
 function Header() {
   const navigate = useNavigate();
-  const { inputValue, setInputValue ,count} = useContext(MyAppContext);
+  const { inputValue, setInputValue, count,setLogin } = useContext(MyAppContext);
 
   const handleNavigate = (category) => {
     navigate(`/homeReplace/${category}`);
@@ -28,6 +28,17 @@ function Header() {
     navigate("meesho")
     setInputValue(e.target.value);
   };
+
+  const showProfile = () => {
+    const profileDetails = document.getElementById('user');
+  profileDetails.style.display = 'block';
+
+  }
+
+  const hideProfile = () => {
+    const profileDetails = document.getElementById('user');
+    profileDetails.style.display = 'none';
+  }
 
   return (
     <div className="container1">
@@ -52,12 +63,12 @@ function Header() {
           <ul className="list">
             <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' />Download App    </li>
             <li className="supplier">Become a Supplier     </li>
-            <div className="profilepart">
-              <div className='profileicon'><Person2OutlinedIcon fontSize='medium' className='icons'/></div>
+            <div className="profilepart" onClick={showProfile} >
+              <div className='profileicon' ><Person2OutlinedIcon fontSize='medium' className='icons' /></div>
               <div className="profile">Profile</div>
             </div>
             <div className="cartpart">
-              <div className='cartIcon'><AddShoppingCartOutlinedIcon fontSize='medium' onClick={goToCart} /> {count > 0 && <span className='counter'>{count}</span> } </div>
+              <div className='cartIcon'><AddShoppingCartOutlinedIcon fontSize='medium' onClick={goToCart} /> {count > 0 && <span className='counter'>{count}</span>} </div>
               <div className="cart">Cart</div>
             </div>
           </ul>
@@ -76,7 +87,12 @@ function Header() {
           <li onClick={() => handleNavigate('electronics')}>Electronics</li>
         </ul>
       </header>
+      <div id='user' className="user" onMouseLeave={hideProfile}>
+        <h5 className='username'>{localStorage.getItem('name')}</h5>
+        <button className='logout' onClick={() => setLogin(false)}> Log out</button>
+      </div>
     </div>
+
   );
 }
 

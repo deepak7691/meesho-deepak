@@ -3,6 +3,7 @@ import { Button, Modal, Box, Typography } from '@mui/material';
 import '../Styles/payment.css';
 import { useNavigate } from 'react-router-dom';
 import { MyAppContext } from './App';
+import loader from '../Images/loader.gif';
 
 function PaymentPage() {
   const navigate = useNavigate();
@@ -84,7 +85,7 @@ function PaymentPage() {
         className="inputdata"
         required
       />
-      <Button className="buttonSubmit" variant='contained' type="submit" style={{color:"black",background:"white"}}>
+      <Button className="buttonSubmit" variant='contained' type="submit" style={{color:"black",background:"white",margin:"15px auto"}}>
         Pay Now
       </Button>
       <Modal
@@ -99,7 +100,9 @@ function PaymentPage() {
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Your Order is placed Successfully<br></br>
-            Redirecting you to home page
+            
+            Redirecting you to home page <br></br>
+            <img src={loader} alt='loader' style={{width:"100px",height:"100px",display:'flex',alignItems:"center", justifyContent:"center",margin:"5px auto", padding:"5px 5px"}}/>
           </Typography>
         </Box>
       </Modal>

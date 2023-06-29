@@ -15,12 +15,13 @@
   }
   
   .additional-image {
+   
     width: 80%;
-    height: 70px;
+    height: 116px;
     margin-bottom: 10px;
   }
   .additional-image.selected {
-    border: 2px solid red; 
+    border: 2px solid rgb(251, 0, 255); 
   }
   
   .main-section {
@@ -33,7 +34,7 @@
   
   .mainpic{
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
  
   
@@ -43,6 +44,7 @@
     margin-top: 35px;
     color: rgb(239, 36, 188);
     gap: 10px;
+    margin-bottom: 20px;
   }
   
   .buttons button {
