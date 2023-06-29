@@ -55,15 +55,16 @@
   
   .right-side {
     display: flex;
+    width: 620px;
     align-items: center;
-    justify-self: center;
+  
   }
   
   .list {
     display: flex;
-    gap: 60px;
-    justify-content:space-evenly;
-    margin-right: 50px;
+    width: 100%;
+    justify-content: start;
+    gap: 30px;
   }
   
   .list li {
@@ -161,7 +162,7 @@
   position: absolute;
   background: rgb(255, 231, 251);
   border-radius: 50%;
-  right: 62px;
+  right: 100px;
   top: 10px;
   font-size: 12px;
   font-weight: bold;
@@ -172,6 +173,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 
 
 

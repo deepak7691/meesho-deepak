@@ -50,8 +50,8 @@ function Header() {
 
         <div className="right-side">
           <ul className="list">
-            <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' />Download App <span>|</span></li>
-            <li className="supplier">Become a Supplier</li>
+            <li className="download"><PhoneAndroidOutlinedIcon fontSize="small" className='icons' />Download App    </li>
+            <li className="supplier">Become a Supplier     </li>
             <div className="profilepart">
               <div className='profileicon'><Person2OutlinedIcon fontSize='medium' className='icons'/></div>
               <div className="profile">Profile</div>

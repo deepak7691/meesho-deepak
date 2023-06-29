@@ -1,42 +1,42 @@
 import React, { useContext, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ProductData } from './data';
-import { Button } from '@mui/material';
+import { Button, FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import { AddShoppingCart, Payment } from '@mui/icons-material';
 import '../Styles/productDetails.css';
-import loader from "../Images/loader.gif"
+import loader from "../Images/loader.gif";
 import { MyAppContext } from './App';
 
 function ProductDetails() {
-
   const navigate = useNavigate();
-  const {cartItem , setCartItem, setCount} = useContext(MyAppContext)
+  const { cartItem, setCartItem, setCount } = useContext(MyAppContext);
   const { id } = useParams();
   const [loaders, setLoaders] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedSize, setSelectedSize] = useState('');
 
-   // Find the product with the matching ID
-   const product = ProductData.find((product) => product.id === parseInt(id));
+  const product = ProductData.find((product) => product.id === parseInt(id));
 
   const handleLoader = () => {
-    setCount((prev) => prev + 1)
+    setCount((prev) => prev + 1);
     setLoaders(false);
-    setCartItem([...cartItem,product])
+    setCartItem([...cartItem, product]);
     setTimeout(() => {
       setLoaders(true);
     }, 600);
-  }
+  };
 
-  const  navigatePayment = () =>{
-      navigate("/payment")
-  }
-  
+  const navigatePayment = () => {
+    navigate("/payment");
+  };
 
   const handleAdditionalImageClick = (image) => {
     setSelectedImage(image);
-  }
+  };
 
- 
+  const handleSizeChange = (event) => {
+    setSelectedSize(event.target.value);
+  };
 
   if (!product) {
     return <div className="product-not-found">Product not found.</div>;
@@ -52,7 +52,7 @@ function ProductDetails() {
                 key={index}
                 src={image}
                 alt={`Additional Image ${index}`}
-                className={`additional-image ${selectedImage === image ? 'selected' : ''}`}
+                className={`additional-image ${selectedImage === image ? 'selected' : 'image'}`}
                 onClick={() => handleAdditionalImageClick(image)}
               />
             ))}
@@ -60,10 +60,20 @@ function ProductDetails() {
           <div className="main-section">
             <img src={selectedImage || product.thumbnail} alt={product.title} className="mainpic" />
             <div className="buttons">
-              <Button onClick={handleLoader} variant="outlinedst" startIcon={<AddShoppingCart />} style={{ border: '1px solid rgb(159, 32, 137)', color: 'rgb(159, 32, 137)' }}>
+              <Button
+                onClick={handleLoader}
+                variant="outlinedst"
+                startIcon={<AddShoppingCart />}
+                style={{ border: '1px solid rgb(159, 32, 137)', color: 'rgb(159, 32, 137)' }}
+              >
                 Add to Cart
               </Button>
-              <Button onClick={navigatePayment} variant="contained" startIcon={<Payment />} style={{ backgroundColor: 'rgb(159, 32, 137)' }}>
+              <Button
+                onClick={navigatePayment}
+                variant="contained"
+                startIcon={<Payment />}
+                style={{ backgroundColor: 'rgb(159, 32, 137)' }}
+              >
                 Buy Now
               </Button>
             </div>
@@ -75,24 +85,14 @@ function ProductDetails() {
             </div>
             <div className="size-selection">
               <h2 className="headings">Select Size:</h2>
-              <div className="radio-group">
-                <label>
-                  <input type="radio" name="size" value="S" />
-                  S
-                </label>
-                <label>
-                  <input type="radio" name="size" value="M" />
-                  M
-                </label>
-                <label>
-                  <input type="radio" name="size" value="L" />
-                  L
-                </label>
-                <label>
-                  <input type="radio" name="size" value="XL" />
-                  XL
-                </label>
-              </div>
+              <FormControl component="fieldset">
+                <RadioGroup name="size" value={selectedSize} onChange={handleSizeChange} row>
+                  <FormControlLabel value="S" control={<Radio />} label="S" />
+                  <FormControlLabel value="M" control={<Radio />} label="M" />
+                  <FormControlLabel value="L" control={<Radio />} label="L" />
+                  <FormControlLabel value="XL" control={<Radio />} label="XL" />
+                </RadioGroup>
+              </FormControl>
             </div>
             <div className="product-details-list">
               <h2 className="headings">Product details</h2>
