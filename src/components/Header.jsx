@@ -7,10 +7,11 @@ import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 import AddShoppingCartOutlinedIcon from '@mui/icons-material/AddShoppingCartOutlined';
 import '../Styles/header.css';
 import { MyAppContext } from './App';
+import Profile from './Profile';
 
 function Header() {
   const navigate = useNavigate();
-  const { inputValue, setInputValue, count,setLogin } = useContext(MyAppContext);
+  const { inputValue, setInputValue, count } = useContext(MyAppContext);
 
   const handleNavigate = (category) => {
     navigate(`/homeReplace/${category}`);
@@ -29,10 +30,7 @@ function Header() {
     setInputValue(e.target.value);
   };
 
-  const handleLogout = () =>{
-    setLogin(false)
-    navigate("/login")
-  }
+ 
 
   const showProfile = () => {
     const profileDetails = document.getElementById('user');
@@ -93,8 +91,7 @@ function Header() {
         </ul>
       </header>
       <div id='user' className="user" onMouseLeave={hideProfile}>
-        <h5 className='username'>{localStorage.getItem('name')}</h5>
-        <button className='logout' onClick={handleLogout}> Log out</button>
+      <Profile/>
       </div>
     </div>
 

@@ -5,7 +5,8 @@ import { MyAppContext } from './App';
 
 function Login() {
 
-  const {setLogin} = useContext(MyAppContext)
+
+  const { setLogin, cartItem } = useContext(MyAppContext)
 
 
   const navigate = useNavigate();
@@ -25,17 +26,20 @@ function Login() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-     
-    const storedEmail = localStorage.getItem('email')
+
+    
     const storedName = localStorage.getItem('name');
     const storedPassword = localStorage.getItem('password');
 
-    if (name === (storedName ||  storedEmail) && password === storedPassword) {
+    if (name === (storedName ) && password === storedPassword) {
       setTimeout(() => {
         setLogin(true)
-        navigate('/payment');
-
-      }, 4000);
+        if (cartItem.length == 0) {
+          navigate("/meesho")
+        } else {
+          navigate('/payment');
+        }
+      }, 2000);
     } else {
       alert('Invalid username or password');
     }
