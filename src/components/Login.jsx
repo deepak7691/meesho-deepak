@@ -34,7 +34,7 @@ function Login() {
     if (name === (storedName ) && password === storedPassword) {
       setTimeout(() => {
         setLogin(true)
-        if (cartItem.length == 0) {
+        if (cartItem.length === 0) {
           navigate("/meesho")
         } else {
           navigate('/payment');
