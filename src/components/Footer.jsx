@@ -11,10 +11,10 @@ import "../Styles/footer.css"
 function Footer() {
   return (
     <footer>
-      <div className='part1'>
+      <div className='part1 formargin5'>
         <div className='sub-part1'>
-          <h3>Shop Non-Stop on Meesho</h3>
-          <p>Trusted by more than 1 Crore Indians<br />
+          <h3 className='part1title'>Shop Non-Stop on Meesho</h3>
+          <p className='part1ptag'>Trusted by more than 1 Crore Indians<br />
             Cash on Delivery | Free Delivery</p>
           <div className="f-image">
             <img className='icon1' src={gplay} alt="acx" />
@@ -26,7 +26,7 @@ function Footer() {
       </div>
 
 
-      <div className='part2'>
+      <div className='part2 formargin5 abcd'>
         <p>Careers</p>
         <p>Become a supplier</p>
         <p>Hall of Fame</p>
@@ -37,7 +37,7 @@ function Footer() {
 
 
 
-      <div className='part3'>
+      <div className='part3 formargin5 abcd'>
         <p>Legal and Policies</p>
         <p>Meesho Tech Blog</p>
         <p>Notices and Returns</p>
@@ -45,9 +45,9 @@ function Footer() {
 
 
 
-      <div className='part4'>
-        <h3>Reach out to us</h3>
-        <div className="icons">
+      <div className='part4 formargin5'>
+        <h3 className='h3tag'>Reach out to us</h3>
+        <div className="iconss">
           <img src={faceboook} alt="icons" />
           <img src={instagram} alt="icons" />
           <img src={youtube} alt="icons" />
@@ -59,9 +59,9 @@ function Footer() {
 
 
 
-      <div part5>
-        <h3>Contact Us</h3>
-        <p>
+      <div className='part5 formargin5'>
+        <h3 className='h3tag'>Contact Us</h3>
+        <p className='textlast'>
           Fashnear Technologies Private<br />
           Limited,<br />
           CIN: U74900KA2015PTC082263<br />
