@@ -1,13 +1,10 @@
 /* CSS for Meesho component */
 .flexbox {
-  
+  padding-top: 170px;
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
   justify-content:space-evenly;
   margin: 0 50px;
-  overflow: hidden; 
-
 }
 
 .cards {
@@ -21,8 +18,12 @@
 
 .cards img {
   width: 100%;
-  height: auto;
+  height: 260px;
   margin-bottom: 10px;
+  border-radius: 15px;
+  object-fit: contain;
+
+
 }
 
 .cards h2 {

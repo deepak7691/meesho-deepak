@@ -203,6 +203,8 @@
   height: 125px;
 }
 
+
+
 .username {
   padding-bottom: 10px;
   margin-bottom: 3px;
@@ -220,4 +222,10 @@
   font-weight: 400;
   background: none;
   border: none;
+}
+
+
+
+.hidden{
+  display: none;
 }

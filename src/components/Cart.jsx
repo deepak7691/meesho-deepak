@@ -65,7 +65,7 @@ function Cart() {
                         <h3 className="productName">{product.title}</h3>
                         <p className="textc">₹{product.price}</p>
                         <p className="textc">All issues easy returns allowed</p>
-                        <p className="textc">Qty: {product.quantity}</p>
+                        <p className="textc">Qty: 1</p>
                        
                         <Button variant="text" startIcon={<CloseIcon />}  className="btn" onClick={() => removeItem(product.id)} style={{color: "rgb(159, 32, 137)"}}>
                           Remove

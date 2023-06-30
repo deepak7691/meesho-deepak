@@ -34,13 +34,13 @@ function Header() {
 
   const showProfile = () => {
     const profileDetails = document.getElementById('user');
-  profileDetails.style.display = 'block';
+  profileDetails.classList.remove("hidden")
 
   }
 
   const hideProfile = () => {
     const profileDetails = document.getElementById('user');
-    profileDetails.style.display = 'none';
+    profileDetails.classList.add("hidden")
   }
 
   return (
@@ -90,7 +90,7 @@ function Header() {
           <li onClick={() => handleNavigate('electronics')}>Electronics</li>
         </ul>
       </header>
-      <div id='user' className="user" onMouseLeave={hideProfile}>
+      <div id='user' className="user hidden" onMouseLeave={hideProfile}>
       <Profile/>
       </div>
     </div>
