@@ -73,7 +73,6 @@ import Cart from './Cart';
 import PaymentPage from './PaymentPage';
 import Login from './Login';
 import Register from './Register';
-import Layout from './Layout';
 
 export const MyAppContext = React.createContext();
 
@@ -99,7 +98,7 @@ function App() {
       <BrowserRouter>
         <Header />
 
-        <Layout>
+    
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/meesho" element={<Meesho />} />
@@ -110,7 +109,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
-        </Layout>
+      
 
         <Footer />
       </BrowserRouter>
