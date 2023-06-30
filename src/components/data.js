@@ -298,12 +298,12 @@ export const ProductData = [
         "stock": 105,
         "brand": "Zara",
         "category": "women-western",
-        "thumbnail": "https://rukminim1.flixcart.com/image/612/612/l4zxn680/t-shirt/f/c/5/m-new-neck-true-basket-original-imagfrjvpyxxjmtd.jpeg?q=70",
+        "thumbnail": "https://images.meesho.com/images/products/237923747/xvcet_512.webp",
         "images": [
-            "https://rukminim1.flixcart.com/image/612/612/l4zxn680/t-shirt/f/c/5/m-new-neck-true-basket-original-imagfrjvpyxxjmtd.jpeg?q=70",
-            "https://rukminim1.flixcart.com/image/612/612/l4zxn680/t-shirt/1/y/s/m-new-neck-true-basket-original-imagfrjvw7yfxtgb.jpeg?q=70",
-            "https://rukminim1.flixcart.com/image/612/612/l4zxn680/t-shirt/b/i/f/m-new-neck-true-basket-original-imagfrjvpuh24jfu.jpeg?q=70",
-            "https://rukminim1.flixcart.com/image/612/612/l4zxn680/t-shirt/h/d/4/m-new-neck-true-basket-original-imagfrjvhjezyyst.jpeg?q=70",
+            "https://images.meesho.com/images/products/237923747/xvcet_512.webp",
+            "https://images.meesho.com/images/products/237923747/y4l4c_512.webp",
+            "https://images.meesho.com/images/products/237923747/fvtv5_512.webp",
+            "https://images.meesho.com/images/products/237923747/drwmy_512.webp",
         ]
     },
     {
@@ -612,7 +612,7 @@ export const ProductData = [
         ]
     },
 
-    // yahan tk done hai 
+    
     {
         "id": 31,
         "title": "Mornadi Velvet Bed",
@@ -625,13 +625,12 @@ export const ProductData = [
         "stock": 140,
         "brand": "Furniture Bed Set",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/31/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/260046190/ljbrv_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/31/1.jpg",
-            "https://i.dummyjson.com/data/products/31/2.jpg",
-            "https://i.dummyjson.com/data/products/31/3.jpg",
-            "https://i.dummyjson.com/data/products/31/4.jpg",
-            "https://i.dummyjson.com/data/products/31/thumbnail.jpg"
+            "https://images.meesho.com/images/products/260046190/ljbrv_512.webp",
+            "https://images.meesho.com/images/products/260046190/ejsbg_512.webp",
+            "https://images.meesho.com/images/products/260046190/wbvlf_512.webp",
+            "https://images.meesho.com/images/products/260046190/5wqjf_512.webp",
         ]
     },
     {
@@ -646,12 +645,12 @@ export const ProductData = [
         "stock": 30,
         "brand": "Ratttan Outdoor",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/32/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/85664457/wqbwn_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/32/1.jpg",
-            "https://i.dummyjson.com/data/products/32/2.jpg",
-            "https://i.dummyjson.com/data/products/32/3.jpg",
-            "https://i.dummyjson.com/data/products/32/thumbnail.jpg"
+            "https://images.meesho.com/images/products/85664457/wqbwn_512.webp",
+            "https://images.meesho.com/images/products/85664457/ntdye_512.webp",
+            "https://images.meesho.com/images/products/85664457/swk5d_512.webp",
+            "https://images.meesho.com/images/products/85664457/qay4e_512.webp"
         ]
     },
     {
@@ -666,13 +665,13 @@ export const ProductData = [
         "stock": 106,
         "brand": "Kitchen Shelf",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/33/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/64412657/7tohe_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/33/1.jpg",
-            "https://i.dummyjson.com/data/products/33/2.jpg",
-            "https://i.dummyjson.com/data/products/33/3.jpg",
-            "https://i.dummyjson.com/data/products/33/4.jpg",
-            "https://i.dummyjson.com/data/products/33/thumbnail.jpg"
+            "https://images.meesho.com/images/products/64412657/axfeq_512.webp",
+            "https://images.meesho.com/images/products/64412657/gph9e_512.webp",
+            "https://images.meesho.com/images/products/64412657/7tohe_512.webp",
+            "https://images.meesho.com/images/products/64412657/clmcp_512.webp",
+            
         ]
     },
     {
@@ -687,13 +686,12 @@ export const ProductData = [
         "stock": 136,
         "brand": "Multi Purpose",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/34/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/230131292/tczf2_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/34/1.jpg",
-            "https://i.dummyjson.com/data/products/34/2.jpg",
-            "https://i.dummyjson.com/data/products/34/3.jpg",
-            "https://i.dummyjson.com/data/products/34/4.jpg",
-            "https://i.dummyjson.com/data/products/34/thumbnail.jpg"
+            "https://images.meesho.com/images/products/230131292/tczf2_512.webp",
+            "https://images.meesho.com/images/products/230131292/7ruha_512.webp",
+            "https://images.meesho.com/images/products/230131292/kcnd5_512.webp",
+          
         ]
     },
     {
@@ -708,13 +706,12 @@ export const ProductData = [
         "stock": 68,
         "brand": "AmnaMart",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/35/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/199165098/w93yk_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/35/1.jpg",
-            "https://i.dummyjson.com/data/products/35/2.jpg",
-            "https://i.dummyjson.com/data/products/35/3.jpg",
-            "https://i.dummyjson.com/data/products/35/4.jpg",
-            "https://i.dummyjson.com/data/products/35/thumbnail.jpg"
+            "https://images.meesho.com/images/products/199165098/w93yk_512.webp",
+            "https://images.meesho.com/images/products/199165098/3goyy_512.webp",
+            "https://images.meesho.com/images/products/199165098/7acf5_512.webp",
+          
         ]
     },
     {
@@ -729,13 +726,13 @@ export const ProductData = [
         "stock": 39,
         "brand": "Professional Wear",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/36/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/105036508/lcd0y_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/36/1.jpg",
-            "https://i.dummyjson.com/data/products/36/2.webp",
-            "https://i.dummyjson.com/data/products/36/3.webp",
-            "https://i.dummyjson.com/data/products/36/4.jpg",
-            "https://i.dummyjson.com/data/products/36/thumbnail.jpg"
+            "https://images.meesho.com/images/products/105036508/lcd0y_512.webp",
+            "https://images.meesho.com/images/products/105036508/w8i25_512.webp",
+            "https://images.meesho.com/images/products/105036508/xjpth_512.webp",
+            "https://images.meesho.com/images/products/105036508/k9gun_512.webp",
+           
         ]
     },
     {
@@ -750,13 +747,13 @@ export const ProductData = [
         "stock": 107,
         "brand": "Soft Cotton",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/37/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/82548779/aa81m_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/37/1.jpg",
-            "https://i.dummyjson.com/data/products/37/2.jpg",
-            "https://i.dummyjson.com/data/products/37/3.jpg",
-            "https://i.dummyjson.com/data/products/37/4.jpg",
-            "https://i.dummyjson.com/data/products/37/thumbnail.jpg"
+            "https://images.meesho.com/images/products/82548779/rqtjj_512.webp",
+            "https://images.meesho.com/images/products/82548779/aa81m_512.webp",
+            "https://images.meesho.com/images/products/82548779/sw8lr_512.webp",
+            "https://images.meesho.com/images/products/82548779/ug0a3_512.webp",
+        
         ]
     },
     {
@@ -776,7 +773,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/38/1.png",
             "https://i.dummyjson.com/data/products/38/2.jpg",
             "https://i.dummyjson.com/data/products/38/3.jpg",
-            "https://i.dummyjson.com/data/products/38/4.jpg"
+            "https://i.dummyjson.com/data/products/38/4.jpg",
         ]
     },
     {
@@ -791,33 +788,15 @@ export const ProductData = [
         "stock": 55,
         "brand": "Top Sweater",
         "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
+        "thumbnail": "https://images.meesho.com/images/products/303678454/xt6as_512.webp",
         "images": [
-            "https://i.dummyjson.com/data/products/39/1.jpg",
-            "https://i.dummyjson.com/data/products/39/2.jpg",
-            "https://i.dummyjson.com/data/products/39/3.jpg",
-            "https://i.dummyjson.com/data/products/39/4.jpg",
-            "https://i.dummyjson.com/data/products/39/thumbnail.jpg"
+            "https://images.meesho.com/images/products/303678454/1hff0_512.webp",
+            "https://images.meesho.com/images/products/303678454/u9enc_512.webp",
+            "https://images.meesho.com/images/products/303678454/hbkll_512.webp",
+            "https://images.meesho.com/images/products/303678454/xt6as_512.webp",
         ]
     },
-    {
-        "id": 40,
-        "title": "women winter clothes",
-        "description": "women winter clothes thick fleece hoodie top with sweat pantjogger women sweatsuit set joggers pants two piece pants set",
-        "prevPrice": 470,
-        "price": 299,
-        "discountPercentage": 13.39,
-        "review": 449787,
-        "rating": 4.9,
-        "stock": 84,
-        "brand": "Top Sweater",
-        "category": "kids",
-        "thumbnail": "https://i.dummyjson.com/data/products/40/thumbnail.jpg",
-        "images": [
-            "https://i.dummyjson.com/data/products/40/1.jpg",
-            "https://i.dummyjson.com/data/products/40/2.jpg"
-        ]
-    },
+   
     {
         "id": 41,
         "title": "NIGHT SUIT",
@@ -836,7 +815,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/41/2.webp",
             "https://i.dummyjson.com/data/products/41/3.jpg",
             "https://i.dummyjson.com/data/products/41/4.jpg",
-            "https://i.dummyjson.com/data/products/41/thumbnail.webp"
+            "https://i.dummyjson.com/data/products/41/thumbnail.webp",
         ]
     },
     {
@@ -857,7 +836,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/42/2.png",
             "https://i.dummyjson.com/data/products/42/3.png",
             "https://i.dummyjson.com/data/products/42/4.jpg",
-            "https://i.dummyjson.com/data/products/42/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/42/thumbnail.jpg",
         ]
     },
     {
@@ -878,7 +857,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/43/2.jpg",
             "https://i.dummyjson.com/data/products/43/3.jpg",
             "https://i.dummyjson.com/data/products/43/4.jpg",
-            "https://i.dummyjson.com/data/products/43/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/43/thumbnail.jpg",
         ]
     },
     {
@@ -899,7 +878,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/44/2.jpg",
             "https://i.dummyjson.com/data/products/44/3.jpg",
             "https://i.dummyjson.com/data/products/44/4.jpg",
-            "https://i.dummyjson.com/data/products/44/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/44/thumbnail.jpg",
         ]
     },
     {
@@ -920,7 +899,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/45/2.webp",
             "https://i.dummyjson.com/data/products/45/3.jpg",
             "https://i.dummyjson.com/data/products/45/4.jpg",
-            "https://i.dummyjson.com/data/products/45/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/45/thumbnail.jpg",
         ]
     },
     {
@@ -941,7 +920,7 @@ export const ProductData = [
             "https://i.dummyjson.com/data/products/46/2.jpg",
             "https://i.dummyjson.com/data/products/46/3.jpg",
             "https://i.dummyjson.com/data/products/46/4.jpg",
-            "https://i.dummyjson.com/data/products/46/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
         ]
     },
     {

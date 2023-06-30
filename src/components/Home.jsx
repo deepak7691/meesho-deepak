@@ -12,31 +12,31 @@ function Home() {
     return (
         <>  <div className="wholepart">
             <div className='container'>
-                <img src={main} className='main-image' />
+                <img src={main} className='main-image' alt='abc' />
             </div>
             <div className='top'>
                 <div className="line1"></div>
                 <div className="text">Top Categories to choose from</div>
-                <div className="line2"></div>
+                <div className="line1"></div>
             </div>
             <div className="products">
-                <img src={products} className='photos' />
+                <img src={products} className='photos' alt='abc' />
             </div>
             <div className="products">
-                <img src={essential} className='photos' />
+                <img src={essential} className='photos' alt='abc'/>
 
             </div>
             <div className="products">
-                <img src={homepic} className='photos' />
+                <img src={homepic} className='photos' alt='abs' />
 
             </div>
             <div className="products">
-                <img src={homepic3} className='photos' />
+                <img src={homepic3} className='photos' alt='abc' />
 
             </div>
 
             <div className="signup">
-                <img src={signup} className='signupImage'/>
+                <img src={signup} className='signupImage' alt='abc'/>
             </div>
           
         </div>

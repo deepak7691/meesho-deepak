@@ -29,6 +29,11 @@ function Header() {
     setInputValue(e.target.value);
   };
 
+  const handleLogout = () =>{
+    setLogin(false)
+    navigate("/login")
+  }
+
   const showProfile = () => {
     const profileDetails = document.getElementById('user');
   profileDetails.style.display = 'block';
@@ -89,7 +94,7 @@ function Header() {
       </header>
       <div id='user' className="user" onMouseLeave={hideProfile}>
         <h5 className='username'>{localStorage.getItem('name')}</h5>
-        <button className='logout' onClick={() => setLogin(false)}> Log out</button>
+        <button className='logout' onClick={handleLogout}> Log out</button>
       </div>
     </div>
 

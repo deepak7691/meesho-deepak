@@ -19,12 +19,13 @@
 }
 
 .text {
-    margin-top: 80px;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
     font-weight: 700;
+    width: fit-content;
 }
 
 .products {
@@ -45,10 +46,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .line1{
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 152px;
+    margin: 0 20px;
 }
 
 .signup{
