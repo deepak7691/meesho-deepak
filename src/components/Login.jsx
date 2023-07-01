@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { MyAppContext } from './App';
 import { Button, Modal, Box, Typography } from '@mui/material';
 import loader from '../Images/loader.gif';
+import loginImage from "../Images/loginimage.webp"
+import "../Styles/login.css"
 
 
 
@@ -62,8 +64,9 @@ function Login() {
 
   return (
      <div className="bg">
-    <form onSubmit={handleSubmit}>
-      <h2 className="payment">Login</h2>
+    <form onSubmit={handleSubmit} className='forms'>
+      <img src={loginImage} alt='ab' className='loginImage'/>
+      <h2 className="payment1">Login</h2>
       <input
         type="text"
         id="cardNumber"
