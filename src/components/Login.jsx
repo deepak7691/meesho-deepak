@@ -1,17 +1,22 @@
 import React, { useContext, useState } from 'react';
-import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { MyAppContext } from './App';
+import { Button, Modal, Box, Typography } from '@mui/material';
+import loader from '../Images/loader.gif';
+
+
+
 
 function Login() {
 
 
-  const { setLogin, cartItem } = useContext(MyAppContext)
+  const { setLogin, } = useContext(MyAppContext)
 
 
   const navigate = useNavigate();
 
 
+  const [open, setOpen] = useState(false);
 
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
@@ -32,20 +37,31 @@ function Login() {
     const storedPassword = localStorage.getItem('password');
 
     if (name === (storedName ) && password === storedPassword) {
-      setTimeout(() => {
-        setLogin(true)
-        if (cartItem.length === 0) {
-          navigate("/meesho")
-        } else {
-          navigate('/payment');
-        }
-      }, 2000);
+      // setTimeout(() => {
+      //   setLogin(true)
+      //   if (cartItem.length === 0) {
+      //     navigate("/meesho")
+      //   } else {
+      //     navigate('/payment');
+      //   }
+      // }, 2000);
+      setLogin(true)
+      setOpen(true);
+      setTimeout(()=>{
+        navigate("/meesho")
+        
+      },2500)
     } else {
       alert('Invalid username or password');
     }
   };
 
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
+     <div className="bg">
     <form onSubmit={handleSubmit}>
       <h2 className="payment">Login</h2>
       <input
@@ -80,7 +96,26 @@ function Login() {
           New User?
         </Button>
       </div>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', bgcolor: 'background.paper', boxShadow: 24, p: 4 }}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Welcome...!
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Logged in Successfully<br></br>
+            
+            Redirecting you to home page <br></br>
+            <img src={loader} alt='loader' style={{width:"100px",height:"100px",display:'flex',alignItems:"center", justifyContent:"center",margin:"5px auto", padding:"5px 5px"}}/>
+          </Typography>
+        </Box>
+      </Modal>
     </form>
+    </div>
   );
 }
 

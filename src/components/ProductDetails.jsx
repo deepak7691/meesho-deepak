@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext,  useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ProductData } from './data';
 import { Button, FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
@@ -6,14 +6,15 @@ import { AddShoppingCart, Payment } from '@mui/icons-material';
 import '../Styles/productDetails.css';
 import loader from "../Images/loader.gif";
 import { MyAppContext } from './App';
-
+import Alert from '@mui/material/Alert';
 function ProductDetails() {
   const navigate = useNavigate();
-  const { cartItem, setCartItem, setCount , login} = useContext(MyAppContext);
+  const { cartItem, setCartItem, setCount, login } = useContext(MyAppContext);
   const { id } = useParams();
   const [loaders, setLoaders] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedSize, setSelectedSize] = useState('');
+  const [alert, setAlert] = useState(false);
 
   const product = ProductData.find((product) => product.id === parseInt(id));
 
@@ -23,13 +24,20 @@ function ProductDetails() {
     setCartItem([...cartItem, product]);
     setTimeout(() => {
       setLoaders(true);
-    }, 600);
+    }, 200);
+    setAlert(true);
+    setTimeout(() => {
+      setAlert(false)
+    }, 2000)
+
   };
 
+  
+
   const navigatePayment = () => {
-    if(login){
-    navigate("/payment");
-    }else{
+    if (login) {
+      navigate("/payment");
+    } else {
       navigate("/login")
     }
   };
@@ -113,6 +121,39 @@ function ProductDetails() {
           <img className="loadingMeesho" src={loader} alt="Loading" />
         </div>
       )}
+      {alert &&
+      <div
+      className="alert-container"
+      style={{
+        position: 'fixed',
+        width: '300px',
+        bottom: '44px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        justifyItems: 'center',
+      }}
+    >
+      <Alert
+        severity="success"
+        color="info"
+        className="alert-box"
+        style={{
+          backgroundColor: 'black',
+          width: '230px',
+          justifyItems: 'center',
+          color: 'white',
+          borderRadius: '10px',
+          fontSize: '15px',
+          opacity: 0,
+        }}
+      >
+        Product is added to cart
+      </Alert>
+    </div>
+    
+}
+     
+
     </>
   );
 }

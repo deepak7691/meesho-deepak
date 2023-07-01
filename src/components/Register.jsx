@@ -53,6 +53,7 @@ function Register() {
   };
 
   return (
+    <div className="bg">
     <form onSubmit={handleSubmit}>
       <h2 className="payment">New User Registration</h2>
       <input
@@ -65,7 +66,7 @@ function Register() {
         required
       />
       <input
-        type="text"
+        type="email"
         id="expiryDate"
         value={email}
         onChange={handleEmail}
@@ -74,7 +75,7 @@ function Register() {
         required
       />
       <input
-        type="text"
+        type="phone"
         id="cvv"
         value={phone}
         onChange={handlePhone}
@@ -83,7 +84,7 @@ function Register() {
         required
       />
       <input
-        type="text"
+        type="password"
         id="address"
         value={password}
         onChange={handlePassword}
@@ -136,6 +137,7 @@ function Register() {
         </Box>
       </Modal>
     </form>
+    </div>
   );
 }
 

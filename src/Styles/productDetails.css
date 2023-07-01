@@ -159,3 +159,47 @@
   width: 100px;
   height: 80px;
 }
+
+/* .message-popup {
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 999;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.message-popup.active {
+  bottom: 20px;
+} */
+
+
+.alert-container {
+  animation: slideIn 0.5s forwards;
+}
+
+.alert-box {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

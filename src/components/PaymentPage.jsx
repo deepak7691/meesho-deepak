@@ -47,10 +47,11 @@ function PaymentPage() {
   };
 
   return (
+    <div className="bg">
     <form onSubmit={handleSubmit}>
       <h2 className="payment">Payment Details</h2>
       <input
-        type="text"
+        type="number"
         id="cardNumber"
         value={cardNumber}
         onChange={handleCardNumberChange}
@@ -68,7 +69,7 @@ function PaymentPage() {
         required
       />
       <input
-        type="text"
+        type="number"
         id="cvv"
         value={cvv}
         onChange={handleCVVChange}
@@ -107,6 +108,7 @@ function PaymentPage() {
         </Box>
       </Modal>
     </form>
+    </div>
   );
 }
 

@@ -7,9 +7,11 @@
     text-align: center;
     padding-top: 180px;
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     border: 1px solid lightgray;
     border-radius: 8px;
+    background: white;
+    height: 100vh;
    }
 
    .payment{
@@ -23,7 +25,7 @@
     border-radius: 8px;
     font-size: 20px;
     border: 1px solid lightgray;
-    background: rgb(243, 243, 243);
+    background: white
    }
 
    .buttonSubmit{
@@ -40,4 +42,11 @@
     align-items: center;
     justify-content: space-around;
     margin: 25px;
+   }
+
+
+   .bg{
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgb(253, 233, 242) 0%, rgb(253, 240, 232) 100%, rgb(253, 240, 232) 100%);
    }
